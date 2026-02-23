@@ -1,0 +1,9 @@
+name = "product-store"
+compatibility_date = "2026-02-24"
+
+[site]
+bucket = "./dist"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+EOF
