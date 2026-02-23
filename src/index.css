@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0a0a0f;
+    color: #e8e8e8;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: #7C3AED; color: #fff; }
+  ::-webkit-scrollbar       { width: 5px; }
+  ::-webkit-scrollbar-track { background: #0a0a0f; }
+  ::-webkit-scrollbar-thumb { background: #7C3AED; border-radius: 99px; }
+}
+
+@layer utilities {
+  .shimmer-bg {
+    background: linear-gradient(90deg, #1a1a2e 25%, #252540 50%, #1a1a2e 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+}
